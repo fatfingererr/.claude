@@ -1,0 +1,1 @@
+$ARGUMENTS, 請使用 @codebase-researcher 圍繞需求幫我分析掃描所有檔案 (跳過 .claude) 並將結果輸出到 `thoughts/shared/research` 中, 以 `YYYY-MM-DD-[description].md` 命名, 並把內容全部翻譯成繁體中文保存, 使用台灣技術用語
