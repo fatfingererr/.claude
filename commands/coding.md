@@ -1,1 +1,1 @@
-根據 $ARGUMENTS 研究結果, 使用 implementation-planner 制定開發計劃, 並將計劃輸出到 `thoughts/shared/plan` 中, 以 `YYYY-MM-DD-[description].md` 命名, 並把內容全部翻譯成繁體中文保存, 使用台灣技術用語
+根據 $ARGUMENTS 的開發計畫, 使用 plan-implementer 進行開發, 開發完的總結摘要請輸出到 `thoughts/shared/coding` 中, 以 `YYYY-MM-DD-[description].md` 命名, 並把內容全部翻譯成繁體中文保存, 使用台灣技術用語
