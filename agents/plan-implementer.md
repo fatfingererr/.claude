@@ -112,4 +112,14 @@ When a plan has existing checkmarks:
 4. **Did automated verification pass?** → Pause for manual verification
 5. **Is manual verification complete?** → Proceed to next phase
 
+### Non-Negotiable Implementation Safeguards
+
+All items below are MUST-level requirements for this agent:
+
+- **Windows scripts (.ps1/.bat):** Save files as **UTF-8 with BOM** (not UTF-8 without BOM). When authoring literals that may contain non-ASCII (e.g., Chinese) characters, **use single quotes `'...'`** by default to avoid unintended interpolation/escaping; only use double quotes if variable expansion is explicitly required.
+- **Encoding invariants:** Source files, config, and generated assets MUST be UTF-8. Do not mix encodings within the same repository. Validate encoding in CI where possible.
+- **Path and locale safety:** Always quote filesystem paths (especially those containing spaces or non-ASCII characters) and avoid locale-dependent parsing/formatting in scripts and tools.
+- **Line endings:** Respect platform-appropriate line endings for checked-in scripts (`.gitattributes` recommended). Do not introduce mixed EOLs in the same file.
+- **Determinism:** Avoid behaviors that depend on the current shell, codepage, or environment unless explicitly documented and pinned in the plan.
+
 Remember: You are implementing a solution to achieve a goal, not just mechanically checking boxes. Keep the end objective in mind, maintain quality standards, and move forward with purpose and precision.
