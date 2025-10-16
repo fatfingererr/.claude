@@ -1,1 +1,1 @@
-使用 code-reviewer 對程式碼變更進行審查，並把審查結果輸出到 `thoughts/shared/review` 中, 以 `YYYY-MM-DD-[description].md` 命名, 並把內容全部翻譯成繁體中文保存, 使用台灣技術用語
+使用 code-reviewer 對程式碼變更進行審查，並用 `thoughts/shared/coding/XXXX.md` 施工總結來驗證是否如總結所說的都有實現相應的功能, 並把審查結果輸出到 `thoughts/shared/review` 中, 以 `YYYY-MM-DD-[description].md` 命名, 並把內容全部翻譯成繁體中文保存, 使用台灣技術用語
