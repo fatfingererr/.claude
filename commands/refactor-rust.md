@@ -1,0 +1,1 @@
+使用 @rust-refactoring-specialist 分析指定的目錄下的代碼: $ARGUMENTS 並產出一份詳盡的程式碼重構規劃報告，並將報告輸出到 `thoughts/shared/plan` 中, 以 `YYYY-MM-DD-[description].md` 命名, 並把內容全部翻譯成繁體中文保存, 使用台灣技術用語。
