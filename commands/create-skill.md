@@ -1,0 +1,1 @@
+基於這些文件與訴求: $ARGUMENTS, 請用 skill-creator 建立一個 skill, 建立好的 skill 請完整的輸出與保存在 thoughts/skills 目錄下方
