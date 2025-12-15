@@ -1,1 +1,1 @@
-使用 @rust-clarity-refiner 分析目前目錄下的程式碼並產出一份詳盡的程式碼審查報告，並將報告輸出到 `thoughts/shared/research` 中, 以 `YYYY-MM-DD-[description].md` 命名, 並把內容全部翻譯成繁體中文保存, 使用台灣技術用語。
+使用 @rust-clarity-refiner 分析：$ARGUMENTS（如果前面為空就針對目錄下所有的程式碼）並產出一份詳盡的程式碼重構建議，並將報告輸出到 `thoughts/shared/research` 中, 以 `YYYY-MM-DD-[description].md` 命名, 並把內容全部翻譯成繁體中文保存, 使用台灣技術用語。
