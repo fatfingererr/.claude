@@ -1,1 +1,4 @@
+skills/**/*
+commands/**/*
+agents/**/*
 settings.local.json
