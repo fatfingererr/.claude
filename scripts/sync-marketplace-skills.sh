@@ -20,10 +20,8 @@ for plugin_dir in "$MARKETPLACES_DIR"/*/; do
     skills_dir="$plugin_dir/skills"
 
     if [[ -d "$skills_dir" ]]; then
-        target_dir="$TARGET_BASE_DIR/$plugin_name"
-        echo "Copying skills from: $plugin_name -> $target_dir"
-        mkdir -p "$target_dir"
-        cp -r "$skills_dir"/* "$target_dir"/ 2>/dev/null || true
+        echo "Copying skills from: $plugin_name -> $TARGET_BASE_DIR"
+        cp -r "$skills_dir"/* "$TARGET_BASE_DIR"/ 2>/dev/null || true
     fi
 done
 

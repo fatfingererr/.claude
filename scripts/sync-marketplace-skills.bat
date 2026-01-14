@@ -19,10 +19,8 @@ for /d %%D in ("%MARKETPLACES_DIR%\*") do (
         echo Skipping: !plugin_name! ^(claude prefix^)
     ) else (
         if exist "%%D\skills" (
-            set "target_dir=%TARGET_BASE_DIR%\!plugin_name!"
-            echo Copying skills from: !plugin_name! -^> !target_dir!
-            if not exist "!target_dir!" mkdir "!target_dir!"
-            xcopy "%%D\skills\*" "!target_dir!\" /E /I /Y >nul 2>&1
+            echo Copying skills from: !plugin_name! -^> %TARGET_BASE_DIR%
+            xcopy "%%D\skills\*" "%TARGET_BASE_DIR%\" /E /I /Y >nul 2>&1
         )
     )
 )
