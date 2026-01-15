@@ -1,6 +1,9 @@
 #!/bin/bash
 # Sync skills from non-claude marketplace plugins to current directory
 
+# Change to .claude directory
+cd .claude
+
 MARKETPLACES_DIR="$HOME/.claude/plugins/marketplaces"
 TARGET_BASE_DIR="./skills"
 
@@ -26,3 +29,6 @@ for plugin_dir in "$MARKETPLACES_DIR"/*/; do
 done
 
 echo "Done!"
+
+# Change back to original directory
+cd ..

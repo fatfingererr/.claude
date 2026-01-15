@@ -3,6 +3,9 @@ setlocal enabledelayedexpansion
 
 :: Sync skills from non-claude marketplace plugins to current directory
 
+:: Change to .claude directory
+cd .claude
+
 set "MARKETPLACES_DIR=%USERPROFILE%\.claude\plugins\marketplaces"
 set "TARGET_BASE_DIR=.\skills"
 
@@ -26,4 +29,8 @@ for /d %%D in ("%MARKETPLACES_DIR%\*") do (
 )
 
 echo Done!
+
+:: Change back to original directory
+cd ..
+
 endlocal
